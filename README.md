@@ -1,37 +1,31 @@
-# dragonfly
+# Dragonfly CLI
 
-Push and pull to ipFS CLI tool based on golang.
+## Download
+
+The excutable binary is downloadable via [release](https://github.com/diancun/dragonfly-cli/releases) page.
 
 ## Usage
 
-### push a local image
+### Push a local image
 
 ```shell
-./dragonfly push -i fly-docker -s local
+./dragonfly push -i [image name] -s local
 ```
 
-### push a dockerhub iamge
-
-**example:**
+### Push a Docker Hub image
 
 ```shell
 ./dragonfly push -i mysql:5.7
 ```
 
-success return cid：`QmfBWHb5857UzBQfPaYJBeFL7A66ZZGzJPkyC4LcUdtCCs`
-
-### pull
+### Pull image
 
 ```shell
 ./dragonfly pull -c QmfBWHb5857UzBQfPaYJBeFL7A66ZZGzJPkyC4LcUdtCCs
 ```
 
-### temporary file
+**All downloaded `.tar` file will saved `/tmp` directory by default.**
 
-All tar temporary files are stored in `/tmp` directory.
+## WebUI
 
-## Web UI
-
-Web: https://dragonfly.diancun.net/
-
-## [releases](https://github.com/diancun/dragonfly-cli/releases)
+https://dragonfly.diancun.net/
