@@ -33,3 +33,5 @@ All tar temporary files are stored in `/tmp` directory.
 ## Web UI
 
 Web: https://dragonfly.diancun.net/
+
+## [releases](https://github.com/diancun/dragonfly-cli/releases)
